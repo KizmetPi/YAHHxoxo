@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>YAHHxoxo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <style>
+     
+hr {
+  border: none;
+  height: 2px;
+  background-color:#f8e7c9;
+  margin: 15px 0;
+}
+
+h1,h2,p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p{
+color:#333333;
+
+}
+h1{
+color:#333333;
+font-weight: bold;
+}
+h2{
+color:#333333;
+font-weight: bold;
+}
+i{
+color:#595959;
+}
+body{
+  font-family: Verdana, Geneva, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url("background.png");
+  background-position: center;
+  background-size: contain;    /* Fits the whole picture on screen at once */
+  background-repeat: no-repeat;/* Prevents image repeating */
+  background-color: black;     /* Fills the rest of the screen with black */
+  background-attachment: fixed;  
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+div.Mtab {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  white-space: wrap;
+  width: 800px;
+  height: 540px;
+  overflow: hidden;
+  text-overflow: clip;
+  border: 5px solid DodgerBlue;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+  resize: both; /* Re-enabled tab resizing */
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  touch-action: none;
+}
+ 
+div.tab {
+  flex: 1;
+  min-height: 0;
+  padding: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: OldLace;
+  margin-left: 0px;
+  white-space: wrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: clip;
+  border: 4px Solid Wheat ;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  box-sizing: border-box;
+}
+div.tab::-webkit-scrollbar {
+  display: none;
+}
+div.Tbar {
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  background-color:DodgerBLue;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0px;
+  margin-top: 0px;
+  white-space: wrap;
+  width: 100%;
+  height: 25px;
+  text-overflow: clip;
+  border: 5px solid DodgerBlue;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  cursor: grab;
+  user-select: none;
+}
+
+/* Mobile Portrait & Landscape Adaptations */
+@media (orientation: portrait) {
+  #win1 {
+    top: 30px !important;
+    left: 3vw !important;
+    width: 94vw !important;
+    height: 44vh !important;
+  }
+  #win2 {
+    top: 50vh !important;
+    left: 3vw !important;
+    width: 94vw !important;
+    height: 44vh !important;
+  }
+}
+
+@media (orientation: landscape) {
+  #win1 {
+    top: 30px !important;
+    left: 2vw !important;
+    width: 47vw !important;
+    height: 85vh !important;
+  }
+  #win2 {
+    top: 30px !important;
+    left: 51vw !important;
+    width: 47vw !important;
+    height: 85vh !important;
+  }
+}
+    </style>
+</head>
+<body>
+
+<!-- WINDOW 1 -->
+<div class="Mtab" id="win1">
+    <div class="Tbar">
+    <span style="color: white; font-weight: bold;">YAHHxoxo</span>
+    <span style="font-weight: bold; font-family: lucida console;position: relative; left: -10px;">
+        <span style="color: yellow;">[-]</span>
+        <span style="color: lightgreen;">[/]</span>
+        <span style="color: red;">[X]</span>
+    </span>
+    </div>
+    <div class="tab">
+    <h1><U>Goop Fuel</U></h1>
+    <i>The only fuel youll ever need!</i>
+    <hr>
+    <h2>Heading 2</h2>
+   
+    <p>paragraph</p>
+    <hr>
+    <h2>Heading 3</h2>
+   
+    <p>paragraph</p>
+    <hr>
+    <img src="image1.png" alt="pic" width="300" height="200">
+    <br>
+    <i> smallest currently retailed version. (Cat for reference.) </i>
+   
+    <hr>
+    <h2>Heading </h2>
+   
+    <p>paragraph</p>
+
+    <br><br><br><br><br><br><br><br><br>
+</div>
+</div>
+
+<!-- WINDOW 2 -->
+<div class="Mtab" id="win2" style="top: 120px; left: 200px; width: 450px; height: 350px;">
+    <div class="Tbar">
+    <span style="color: white; font-weight: bold;">IDKWTPH</span>
+    <span style="font-weight: bold; font-family: lucida console;position: relative; left: -10px;">
+        <span style="color: yellow;">[-]</span>
+        <span style="color: lightgreen;">[/]</span>
+        <span style="color: red;">[X]</span>
+    </span>
+    </div>
+    <div class="tab">
+        <h1><u>About Us</u></h1>
+        <i>We are very kewl :)</i>
+        <hr>
+        <u> Try dragging and resizing the tabs</u>
+    </div>
+</div>
+
+
+<script>
+let highestZ = 1;
+
+document.querySelectorAll(".Mtab").forEach((tab) => {
+    const bar = tab.querySelector(".Tbar");
+    let dragging = false;
+    let startX, startY, initialLeft, initialTop;
+
+    // Bring clicked window to the front
+    const bringToFront = () => {
+        highestZ++;
+        tab.style.zIndex = highestZ;
+    };
+
+    tab.addEventListener("mousedown", bringToFront);
+    tab.addEventListener("touchstart", bringToFront, { passive: true });
+
+    const startDrag = (e) => {
+        dragging = true;
+        const point = e.touches ? e.touches[0] : e;
+        startX = point.clientX;
+        startY = point.clientY;
+        initialLeft = tab.offsetLeft;
+        initialTop = tab.offsetTop;
+        bar.style.cursor = "grabbing";
+        tab.style.setProperty('left', initialLeft + 'px', 'important');
+        tab.style.setProperty('top', initialTop + 'px', 'important');
+    };
+
+    const onDrag = (e) => {
+        if (!dragging) return;
+        const point = e.touches ? e.touches[0] : e;
+        const dx = point.clientX - startX;
+        const dy = point.clientY - startY;
+        tab.style.setProperty('left', (initialLeft + dx) + 'px', 'important');
+        tab.style.setProperty('top', (initialTop + dy) + 'px', 'important');
+    };
+
+    const stopDrag = () => {
+        dragging = false;
+        bar.style.cursor = "grab";
+    };
+
+    bar.addEventListener("mousedown", startDrag);
+    bar.addEventListener("touchstart", startDrag, { passive: true });
+
+    document.addEventListener("mousemove", onDrag);
+    document.addEventListener("touchmove", onDrag, { passive: true });
+
+    document.addEventListener("mouseup", stopDrag);
+    document.addEventListener("touchend", stopDrag);
+});
+</script>
+</body>
+</html>
